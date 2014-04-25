@@ -586,7 +586,7 @@
   color: #a8936f;
   font-weight: 700; }
 #webkite-results .review-excerpt > .webkite-truncated::after {
-  content: "…"; }
+  content: "..."; }
 
 /************************************ TABLE ITEM DETAILS */
 #webkite-results .webkite-item-details {
