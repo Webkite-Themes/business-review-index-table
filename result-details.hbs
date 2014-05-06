@@ -1,6 +1,10 @@
-<td colspan="4">
+<td colspan="5">
+  <ul class="forty">
+    {{#facet name="Image URL"}}<img src="{{displayValue}}"/>{{/facet}}
+  </ul>
   <ul class="sixty">
     <li>
+  	  <b>location</b>
     	<span class="facet-values address">
         <a target="_blank" href="http://maps.google.com/?q={{#facet name='Address 1'}}{{displayValue}}{{/facet}} {{#facet name='City'}}{{displayValue}}{{/facet}} {{#facet name='State'}}{{displayValue}}{{/facet}} {{#facet name='Zip Code'}}{{displayValue}}{{/facet}} {{#facet name='Country'}}{{displayValue}}{{/facet}}" class="webkite-address">
           {{#facet name="Street Address"}}<span>{{displayValue}}</span>{{/facet}}
@@ -10,20 +14,22 @@
         </a>
       </span>
   	</li>
-  	{{#facet name="Phone Number"}}
   	<li>
+    	<b>phone number</b>
+      {{#facet name="Phone Number"}}
       <span class="facet-values">
         <a href="tel:{{displayValue}}">{{displayValue}}</a>
       </span>
+      {{/facet}}
   	</li>
-  	{{/facet}}
-  	{{#facet name="Website"}}
     <li>
+    <b>website</b>
+    {{#facet name="Website"}}
     <span class="facet-values">
       <a href="{{displayValue}}" class="webkite-website">{{displayValue}}</a>
     </span>
-    </li>
     {{/facet}}
+    </li>
     <li>
     {{#facet name="Category"}}
 	    {{#if filterable}}
@@ -53,9 +59,7 @@
     </li>
     <li>
     <b>price</b>
-    {{#facet name="Price ($)"}}
-    <span class="facet-values">${{displayValue}}</span>
-    {{/facet}}
+    {{#facet name="Price"}}<span class="facet-values">{{displayValue}}</span>{{/facet}}
     </li>
     <li>
     {{#facet name="Rating"}}
