@@ -34,7 +34,14 @@
             {{#facet name="Name"}}<h2>{{displayValue}}</h2>{{/facet}} 
           </li>
         	<li class="xs-only">
+<<<<<<< HEAD
           	<b>review</b>
+=======
+        		{{#facet name="Review Date"}}<span class="review-date">{{displayValue}} •</span>{{/facet}}
+        		{{#facet name="Review Excerpt"}}<span class="review-excerpt">{{truncate displayValue 140 wrap=true }}</span>{{/facet}}
+        	</li>
+					<li class="xs-only">
+>>>>>>> version-2
             {{#facet name="Review URL"}}
             <span class="facet-values">
               <a href="{{displayValue}}">Link to Review</a>
@@ -49,8 +56,16 @@
       </td>
       <td class="webkite-review until-xs">
         <ul>
+<<<<<<< HEAD
 					<li class="until-xs">
           	<b class="sm-only">review</b>
+=======
+        	<li>
+        		{{#facet name="Review Date"}}<span class="review-date">{{displayValue}} •</span>{{/facet}}
+        		{{#facet name="Review Excerpt"}}<span class="review-excerpt">{{truncate displayValue 140 wrap=true }}</span>{{/facet}}
+        	</li>
+					<li>
+>>>>>>> version-2
             {{#facet name="Review URL"}}
             <span class="facet-values">
               <a href="{{displayValue}}">Link to Review</a>
